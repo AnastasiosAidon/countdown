@@ -1,0 +1,99 @@
+<!DOCTYPE html>bvc csad _:
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="bg-video">
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="content">
+            <h1>WEBSITE IS ALMOST READY</h1>
+            <p>Our website is under construction. We’ll be here soon with our new awesome. Subscribe to be notified.</p>
+            <div id="countdown">
+                <span id="days"></span> Days
+                <span id="hours"></span> Hours
+                <span id="minutes"></span> Minutes
+                <span id="seconds"></span> Seconds
+            </div>
+            <button id="homeBtn">HOME</button>
+            <button id="subscribeBtn">SUBSCRIBE NOW</button>
+            <button id="contactBtn">CONTACT US</button>
+            <div class="social-icons">
+                <a href="#"><img src="path-to-icon/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="path-to-icon/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="path-to-icon/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="path-to-icon/google-plus.png" alt="Google Plus"></a>
+                <a href="#"><img src="path-to-icon/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subscribe Modal -->
+    <div id="subscribeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Subscribe to our Newsletter</h2>
+            <form id="subscribeForm" action="https://your-mailchimp-url.com" method="post">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" name="A1" placeholder="A1" required>
+                <input type="text" name="A2" placeholder="A2" required>
+                <input type="text" name="A3" placeholder="A3" required>
+                <input type="text" name="A4" placeholder="A4" required>
+                <input type="text" name="A5" placeholder="A5" required>
+                <input type="text" name="A6" placeholder="A6" required>
+                <select name="A7" required>
+                    <option value="">Select A7</option>
+                    <option value="Option1">Option1</option>
+                    <option value="Option2">Option2</option>
+                </select>
+                <label><input type="checkbox" name="A8" id="A8"> A8</label>
+                <input type="text" name="A9" id="A9" placeholder="A9" style="display:none;">
+                <input type="date" name="A10" required>
+                <select name="A11" id="A11" required>
+                    <option value="">ΑΝΔΡΑΣ/ΓΥΝΑΙΚΑ</option>
+                    <option value="ΑΝΔΡΑΣ">ΑΝΔΡΑΣ</option>
+                    <option value="ΓΥΝΑΙΚΑ">ΓΥΝΑΙΚΑ</option>
+                </select>
+                <div id="A12-A13" style="display:none;">
+                    <select name="A12">
+                        <option value="">ΝΑΙ/ΟΧΙ</option>
+                        <option value="ΝΑΙ">ΝΑΙ</option>
+                        <option value="ΟΧΙ">ΟΧΙ</option>
+                    </select>
+                    <input type="date" name="A13">
+                </div>
+                <label><input type="checkbox" name="A14"> A14</label>
+                <label><input type="checkbox" name="A15"> A15</label>
+                <select name="A16" required>
+                    <option value="">Εκπαίδευση</option>
+                    <option value="Γυμνάσιο">Γυμνάσιο</option>
+                    <option value="Λύκειο">Λύκειο</option>
+                    <option value="ΤΕΛ">ΤΕΛ</option>
+                    <option value="ΤΕΙ">ΤΕΙ</option>
+                    <option value="ΑΕΙ">ΑΕΙ</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
